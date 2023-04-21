@@ -71,6 +71,15 @@
     font-weight: 700;
     font-size: 18px;
     margin-bottom: 70px;
+    transition: 0.3s;
+    &:hover {
+      background-color: $main-color;
+      color: #fff;
+      path {
+        transition: 0.3s;
+        fill: #fff;
+      }
+    }
   }
   .element {
     position: absolute;

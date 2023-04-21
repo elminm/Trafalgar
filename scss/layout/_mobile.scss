@@ -27,6 +27,11 @@
     a {
       @extend .services__section-link;
       align-self: flex-start;
+      display: flex;
+      align-items: center;
+      svg {
+        margin-left: 10px;
+      }
     }
   }
   &-img {
