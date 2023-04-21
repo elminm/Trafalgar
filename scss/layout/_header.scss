@@ -1,0 +1,68 @@
+.header__section {
+  margin: 28px 91px 0 91px;
+  &-nav {
+    @include flex-justify-between;
+    &-list {
+      @include flex-align-center;
+      li {
+        a {
+          margin-right: 20px;
+          color: #1f1534;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          opacity: 0.5;
+          transition: 0.4s;
+          &.active {
+            color: #1f1534;
+            opacity: 1;
+          }
+          &:hover {
+            color: #1f1534;
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+  &-info {
+    @include flex-justify-between;
+    position: relative;
+    .element {
+      position: absolute;
+      top: 35px;
+      left: -150px;
+    }
+    &-title {
+      width: 445px;
+      h1 {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        margin-bottom: 25px;
+      }
+      p {
+        color: #7d7987;
+        margin-bottom: 45px;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 21px;
+      }
+      button {
+        @include btn;
+        background-color: $main-color;
+        color: #fff;
+        cursor: pointer;
+        transition: 0.3s;
+        &:hover {
+          background-color: rgb(0, 191, 255);
+        }
+      }
+    }
+    &-img {
+      width: 700px;
+      margin-top: 60px;
+      margin-bottom: 92px;
+    }
+  }
+}
