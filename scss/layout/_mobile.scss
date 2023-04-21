@@ -1,0 +1,40 @@
+.mobile__app {
+  display: grid;
+  grid-template-columns: 1fr 650px;
+  padding: 0 10rem;
+  margin-bottom: 10rem;
+  &-desc {
+    @include flex-column;
+    margin-right: 70px;
+    h2 {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 48px;
+      margin-bottom: 30px;
+    }
+    .divider {
+      @include divider;
+    }
+    p {
+      font-style: normal;
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 30px;
+      color: #7d7987;
+      margin-bottom: 40px;
+    }
+    a {
+      @extend .services__section-link;
+      align-self: flex-start;
+    }
+  }
+  &-img {
+    width: 100%;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
